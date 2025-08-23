@@ -2,11 +2,11 @@ const logInBtnEl = document.getElementById("logIn-btn");
 
 logInBtnEl.addEventListener('click', (event)=> {
     event.preventDefault();
-    const phonNumber = '01234567891';
-    const pinNumber = '1234';
+    const phonNumber = 12345678910;
+    const pinNumber = 1234;
 
-    const phnNumValue = document.getElementById("phnNum").value;
-    const pinNumValue = document.getElementById("pinNum").value;
+    const phnNumValue = parseInt(document.getElementById("phnNum").value);
+    const pinNumValue = parseInt(document.getElementById("pinNum").value);
     const warningMsg = document.getElementById("error-success");
     if(phonNumber === phnNumValue && pinNumber === pinNumValue){
         window.location.href = `../other-pages/welcome.html`;
