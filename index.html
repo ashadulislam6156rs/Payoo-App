@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ----------------Website title------------------ -->
+    <title>Payoo App</title>
+     <!-- ----------------Daisy Ui cdn------------------ -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+       <!-- ----------------Tailwind cdn------------------  -->
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+       <!-- ----------------css link------------------ -->
+      <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body class="outfit bg-black py-10">
+     <!-- ----------------Website title------------------ -->
+      <section class="outfit max-w-md h-[110vh] m-auto rounded-2xl bg-[#f3f5f7] flex justify-center items-center flex-col">
+        <div class="bg-[url(./assets/bg.png)] bg-cover bg-no-repeat w-72 h-36 flex justify-center items-center">
+            <img src="./assets/Group.png" alt="">
+        </div>
+        <form action="" class="bg-white p-8 rounded-2xl">
+            <label for="number">Mobile Number</label>
+            <input id="phnNum" type="number" required placeholder="Enter your number" class="input block mb-4 text-sm mt-1 rounded-2xl" />
+            <label for="password">4 Digit Pin</label>
+            <input id="pinNum" type="password" required placeholder="Enter 4 digit pin" class="input block text-sm mt-1 rounded-2xl" />
+            <button id="logIn-btn" class="w-full bg-[#0874F2] mt-4 rounded-xl text-white p-1 cursor-pointer hover:bg-black transition-colors duration-600 ease-out">LogIn</button>
+            <p id="error-success"></p>
+        </form>
+      </section>
+
+     <!-- ----------------javascript link------------------ -->
+    <script src="./js/logIn.js"></script>
+    
+</body>
+</html>
