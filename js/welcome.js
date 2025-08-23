@@ -16,7 +16,7 @@ const pinNum = "1234";
 
 /*--------------------> Log Out functinality start <--------------------*/
 logOutBtnEl.addEventListener("click", (event) =>{
-    window.location.href = `../index.html`;
+    window.location.href = `./index.html`;
 
 })
 
