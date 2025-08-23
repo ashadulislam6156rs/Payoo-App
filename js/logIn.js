@@ -9,7 +9,7 @@ logInBtnEl.addEventListener('click', (event)=> {
     const pinNumValue = parseInt(document.getElementById("pinNum").value);
     const warningMsg = document.getElementById("error-success");
     if(phonNumber === phnNumValue && pinNumber === pinNumValue){
-        window.location.href = `../other-pages/welcome.html`;
+        window.location.href = "./welcome.html";
         alert("Your login process succesfully");
     }
     else{
