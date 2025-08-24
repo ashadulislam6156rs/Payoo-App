@@ -10,9 +10,14 @@ const getBonusBtnEl = document.getElementById("getBonus-btn");
 const getBonusParentEl = document.getElementById("getBonus-parent");
 const payBillBtnEl = document.getElementById("payBill-btn");
 const payBillFormEl = document.getElementById("payBillForm");
+const transitionBtnEl = document.getElementById("transition-btn");
+const transitionListFormEl = document.getElementById("transitionList-parent");
+const transitionListEl = document.getElementById("transition-list");
 
 const acountNum = "12345678910";
 const pinNum = "1234";
+
+let transactionResult = [];
 
 /*--------------------> Log Out functinality start <--------------------*/
 logOutBtnEl.addEventListener("click", (event) =>{
@@ -28,6 +33,7 @@ addMoneyEl.addEventListener("click", (event) =>{
     TransferParentEl.style.display = "none";
     getBonusParentEl.style.display = "none";
     payBillFormEl.style.display = "none";
+    transitionListFormEl.style.display = "none";
     addMoneyEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     addMoneyEl.style.borderColor = "#0874F2";
     cashOutBtnEl.style.backgroundColor = "";
@@ -38,6 +44,8 @@ addMoneyEl.addEventListener("click", (event) =>{
     getBonusBtnEl.style.borderColor = ""; 
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = "";
+    transitionBtnEl.style.backgroundColor = "";
+    transitionBtnEl.style.borderColor = "";
 
 })
 cashOutBtnEl.addEventListener("click", (event) =>{
@@ -46,6 +54,7 @@ cashOutBtnEl.addEventListener("click", (event) =>{
     TransferParentEl.style.display = "none";
     getBonusParentEl.style.display = "none";
     payBillFormEl.style.display = "none";
+    transitionListFormEl.style.display = "none";
     cashOutParentEl.style.display = "block";
     cashOutBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     cashOutBtnEl.style.borderColor = "#0874F2";
@@ -57,6 +66,9 @@ cashOutBtnEl.addEventListener("click", (event) =>{
     getBonusBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = "";
+    transitionBtnEl.style.backgroundColor = "";
+    transitionBtnEl.style.borderColor = "";
+
 
 })
 userTransferMoneyBtnEl.addEventListener("click", (event) =>{
@@ -65,6 +77,7 @@ userTransferMoneyBtnEl.addEventListener("click", (event) =>{
     cashOutParentEl.style.display = "none";
     getBonusParentEl.style.display = "none";
     payBillFormEl.style.display = "none";
+    transitionListFormEl.style.display = "none";
     TransferParentEl.style.display = "block";
     userTransferMoneyBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     userTransferMoneyBtnEl.style.borderColor = "#0874F2";
@@ -76,6 +89,8 @@ userTransferMoneyBtnEl.addEventListener("click", (event) =>{
     cashOutBtnEl.style.borderColor = "";
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = ""; 
+    transitionBtnEl.style.backgroundColor = "";
+    transitionBtnEl.style.borderColor = "";
 
 })
 getBonusBtnEl.addEventListener("click", (event) =>{
@@ -84,6 +99,7 @@ getBonusBtnEl.addEventListener("click", (event) =>{
     cashOutParentEl.style.display = "none";
     TransferParentEl.style.display = "none";
     payBillFormEl.style.display = "none";
+    transitionListFormEl.style.display = "none";
     getBonusParentEl.style.display = "block";
     getBonusBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     getBonusBtnEl.style.borderColor = "#0874F2";
@@ -95,6 +111,8 @@ getBonusBtnEl.addEventListener("click", (event) =>{
     userTransferMoneyBtnEl.style.borderColor = "";
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = "";
+    transitionBtnEl.style.backgroundColor = "";
+    transitionBtnEl.style.borderColor = "";
 
 })
 
@@ -104,6 +122,7 @@ payBillBtnEl.addEventListener("click", (event) =>{
     cashOutParentEl.style.display = "none";
     TransferParentEl.style.display = "none";
     getBonusParentEl.style.display = "none";
+    transitionListFormEl.style.display = "none";
     payBillFormEl.style.display = "block";
     payBillBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     payBillBtnEl.style.borderColor = "#0874F2";
@@ -115,6 +134,54 @@ payBillBtnEl.addEventListener("click", (event) =>{
     userTransferMoneyBtnEl.style.borderColor = "";
     getBonusBtnEl.style.backgroundColor = "";
     getBonusBtnEl.style.borderColor = "";
+    transitionBtnEl.style.backgroundColor = "";
+    transitionBtnEl.style.borderColor = "";
+
+})
+transitionBtnEl.addEventListener("click", (event) =>{
+    event.preventDefault();
+    addMoneyFormEl.style.display = "none";
+    cashOutParentEl.style.display = "none";
+    TransferParentEl.style.display = "none";
+    getBonusParentEl.style.display = "none";
+    payBillFormEl.style.display = "none";
+    transitionListFormEl.style.display = "block";
+    transitionBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
+    transitionBtnEl.style.borderColor = "#0874F2";
+    addMoneyEl.style.backgroundColor = "";
+    addMoneyEl.style.borderColor = ""; 
+    cashOutBtnEl.style.backgroundColor = "";
+    cashOutBtnEl.style.borderColor = "";
+    userTransferMoneyBtnEl.style.backgroundColor = "";
+    userTransferMoneyBtnEl.style.borderColor = "";
+    getBonusBtnEl.style.backgroundColor = "";
+    getBonusBtnEl.style.borderColor = "";
+    payBillBtnEl.style.backgroundColor = "";
+    payBillBtnEl.style.borderColor = "";
+    transitionListEl.innerText = '';
+    
+
+   for(let element of transactionResult){
+     let div = document.createElement("div");
+    div.innerHTML = `<div class="rounded-xl bg-white p-3 text-base flex justify-between items-center">
+               <div class="flex items-center gap-4">
+                   <img class="rounded-full bg-[#f2f2f2] p-3" src="${element.img}" alt="">
+                  <div>
+                    <h1 class="text-lg font-semibold text-[rgba(8,8,8,0.7)]">${element.name}</h1>
+                    <p class="font-medium text-xs text-gray-500">${element.time}</p>
+                  </div>
+               </div>
+               <div>
+                    <a class="text-lg text-[#080808]" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+               </div>
+
+           </div>`;
+
+    transitionListEl.appendChild(div);
+   }
+
+   
+
 
 })
 /*--------------------> Add money functinality start <--------------------*/
@@ -134,12 +201,25 @@ addMoneyBtn.addEventListener("click", (event) =>{
         addMoneyMsgEl.innerText = "Your money add Successfully";
         addMoneyMsgEl.style.color = "green";
 
+    const data = {
+    img: './assets/wallet1.png',
+    name: 'Add Money',
+    time: new Date().toLocaleTimeString()
+
+}
+transactionResult.push(data);
+
+document.getElementById("addAcountNum").value = "";
+document.getElementById("addMoney").value = "";
+document.getElementById("addPin").value = "";
+
     }
     else{
         addMoneyMsgEl.innerText = "Please valid account number and pin";
         addMoneyMsgEl.style.color = "red";
 
     }
+
    
 })
 
@@ -161,6 +241,19 @@ withdrawMoneyBtn.addEventListener("click", (event) => {
         mainBalance.innerText = mainBalanceValue;
         withdrawMoneyMsgEl.innerText = "Your Withdraw money Successfully";
         withdrawMoneyMsgEl.style.color = "green";
+
+               const data = {
+    img: './assets/send1.png',
+    name: 'Cash Out',
+    time: new Date().toLocaleTimeString()
+
+}
+transactionResult.push(data);
+
+document.getElementById("withdrawAcountNum").value = "";
+document.getElementById("withdrawPin").value = "";
+document.getElementById("withdrawMoney").value = "";
+
     }
     else{
         withdrawMoneyMsgEl.innerText = "Please valid account number and pin";
@@ -185,8 +278,22 @@ userSendMoneyBtn.addEventListener("click", (event) => {
         mainBalance.innerText = mainBalanceValue;
         userMoneyMsgMsgEl.innerText = "Your Transfer money Successfully Send";
         userMoneyMsgMsgEl.style.color = "green";
-    }
-    else{
+
+           const data = {
+    img: './assets/money1.png',
+    name: 'Transfer Money',
+    time: new Date().toLocaleTimeString()
+
+}
+transactionResult.push(data);
+
+document.getElementById("userAcountNum").value = "";
+document.getElementById("userPin").value = "";
+document.getElementById("transferMoney").value = "";
+
+}
+    
+else{
         userMoneyMsgMsgEl.innerText = "Please valid account number and pin";
         userMoneyMsgMsgEl.style.color = "red";
     }
@@ -207,14 +314,25 @@ getBonusBtn.addEventListener("click", (event) => {
         mainBalance.innerText = mainBalanceValue;
         getBonusMsgEl.innerText = "Your Bonus money Successfully Add";
         getBonusMsgEl.style.color = "green";
-    }
-    else{
+
+           const data = {
+    img: './assets/bonus1.png',
+    name: 'Get Bonus',
+    time: new Date().toLocaleTimeString()
+
+}
+transactionResult.push(data);
+
+document.getElementById("getBonusCoupon").value = "";
+
+}
+else{
         getBonusMsgEl.innerText = "Please Enter your valid Coupon";
         getBonusMsgEl.style.color = "red";
     }
 });
 
-/*--------------------> Cash out functinality start <--------------------*/
+/*--------------------> Pay Bill functinality start <--------------------*/
 
 const payBillBtn = document.getElementById("payBillBtn");
 payBillBtn.addEventListener("click", (event) => {
@@ -232,12 +350,25 @@ payBillBtn.addEventListener("click", (event) => {
         mainBalance.innerText = mainBalanceValue;
         payBillMsgEl.innerText = "Your Pay Bill Successfully Send";
         payBillMsgEl.style.color = "green";
+           const data = {
+    img: './assets/purse1.png',
+    name: 'Pay Bill',
+    time: new Date().toLocaleTimeString()
+
+}
+transactionResult.push(data);
+
+document.getElementById("payBillAcountNum").value = "";
+document.getElementById("payBillPin").value ="";
+document.getElementById("payBill").value ="";
     }
     else{
         payBillMsgEl.innerText = "Please valid account number and pin";
         payBillMsgEl.style.color = "red";
     }
 });
+
+
 
 
 
