@@ -14,7 +14,7 @@
         <!-- ----------------fontawasme cdn------------------ -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body class="outfit bg-black py-10">
+<body class="outfit lg:bg-black lg:py-7 xl:bg-black xl:py-7">
      <!-- ----------------Website title------------------ -->
      <section class="outfit max-w-xs md:max-w-md h-auto m-auto rounded-2xl bg-white">
         <nav class="flex justify-between items-center border-b-2 border-gray-300 py-3" >
@@ -32,33 +32,33 @@
           <p class="text-gray-500 text-sm md:text-base py-2 ">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
         </div>
         <div class="mx-7 my-4 grid grid-cols-3 gap-4 py-5 md:py-10">
-          <button id="addMoney-btn" class="hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
+          <button id="addMoney-btn" class=" hover:shadow-md bg-[rgba(8,116,242,0.05)] border-1 border-[#0874F2] text-[#0874F2] cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
                <img class="block w-5 mx-auto pb-2" src="./assets/wallet1.png" alt="">
                Add Money
           </button>
-          <button id="cashOut-btn" class="hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
+          <button id="cashOut-btn" class=" hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
                <img class="block w-5 mx-auto pb-2" src="./assets/send1.png" alt="">
                Cash Out
           </button>
-          <button id="userTransferMoney-btn" class="hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
+          <button id="userTransferMoney-btn" class=" hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
                <img class="block w-5 mx-auto pb-2" src="./assets/money1.png" alt="">
                Trasfer Money
           </button>
-          <button id="getBonus-btn" class="hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
+          <button id="getBonus-btn" class=" hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
                <img class="block w-5 mx-auto pb-2" src="./assets/bonus1.png" alt="">
                Get Bonus
           </button>
-          <button id="payBill-btn" class="hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
+          <button id="payBill-btn" class=" hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
                <img class="block w-5 mx-auto pb-2" src="./assets/purse1.png" alt="">
                Pay Bill
           </button>
-          <button id="transition-btn" class="hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
+          <button id="transition-btn" class=" hover:shadow-md border-1 border-gray-300 cursor-pointer w-22 md:w-28 h-16 md:h-20 rounded-xl text-xs font-semibold mx-auto">
                <img class="block w-5 mx-auto pb-2" src="./assets/transaction1.png" alt="">
                Transitions
           </button>
      </div>
  <!-- ----------------add money form ------------------ -->
-     <form id="addMoneyForm" class="px-7 bg-[#f3f5f7] pt-6 hidden h-auto py-5 md:py-10 rounded-b-2xl">
+     <form id="addMoneyForm" class="px-7 bg-[#f3f5f7] pt-6 h-auto py-5 md:py-10 rounded-b-2xl">
           <h1 class="font-semibold text-lg text-black pb-2">Add Money</h1>
           <div class="rounded-xl bg-white p-5 text-base">
                <label for="">Select A Bank</label>

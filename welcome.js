@@ -36,8 +36,10 @@ addMoneyEl.addEventListener("click", (event) =>{
     transitionListFormEl.style.display = "none";
     addMoneyEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     addMoneyEl.style.borderColor = "#0874F2";
+    addMoneyEl.style.color = "#0874F2";
     cashOutBtnEl.style.backgroundColor = "";
     cashOutBtnEl.style.borderColor = "";
+    cashOutBtnEl.style.color = "black";
     userTransferMoneyBtnEl.style.backgroundColor = "";
     userTransferMoneyBtnEl.style.borderColor = "";
     getBonusBtnEl.style.backgroundColor = "";
@@ -46,6 +48,11 @@ addMoneyEl.addEventListener("click", (event) =>{
     payBillBtnEl.style.borderColor = "";
     transitionBtnEl.style.backgroundColor = "";
     transitionBtnEl.style.borderColor = "";
+    transitionBtnEl.style.color = "black";
+    userTransferMoneyBtnEl.style.color = "black";
+    payBillBtnEl.style.color = "black";
+    getBonusBtnEl.style.color = "black";
+
 
 })
 cashOutBtnEl.addEventListener("click", (event) =>{
@@ -58,8 +65,10 @@ cashOutBtnEl.addEventListener("click", (event) =>{
     cashOutParentEl.style.display = "block";
     cashOutBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     cashOutBtnEl.style.borderColor = "#0874F2";
-    addMoneyEl.style.backgroundColor = "";
-    addMoneyEl.style.borderColor = "";  
+    cashOutBtnEl.style.color = "#0874F2";
+    addMoneyEl.style.backgroundColor = "#ffffff";
+    addMoneyEl.style.borderColor = "#d0d5db";
+    addMoneyEl.style.color = "black"; 
     userTransferMoneyBtnEl.style.backgroundColor = "";
     userTransferMoneyBtnEl.style.borderColor = "";
     getBonusBtnEl.style.borderColor = "";
@@ -68,6 +77,11 @@ cashOutBtnEl.addEventListener("click", (event) =>{
     payBillBtnEl.style.borderColor = "";
     transitionBtnEl.style.backgroundColor = "";
     transitionBtnEl.style.borderColor = "";
+    transitionBtnEl.style.color = "black";
+    userTransferMoneyBtnEl.style.color = "black";
+    payBillBtnEl.style.color = "black";
+    getBonusBtnEl.style.color = "black";
+   
 
 
 })
@@ -81,16 +95,22 @@ userTransferMoneyBtnEl.addEventListener("click", (event) =>{
     TransferParentEl.style.display = "block";
     userTransferMoneyBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     userTransferMoneyBtnEl.style.borderColor = "#0874F2";
+    userTransferMoneyBtnEl.style.color = "#0874F2";
     getBonusBtnEl.style.backgroundColor = "";
     getBonusBtnEl.style.borderColor = "";
-    addMoneyEl.style.backgroundColor = "";
-    addMoneyEl.style.borderColor = ""; 
+    addMoneyEl.style.backgroundColor = "#ffffff";
+    addMoneyEl.style.borderColor = "#d0d5db";
+    addMoneyEl.style.color = "black";
     cashOutBtnEl.style.backgroundColor = "";
     cashOutBtnEl.style.borderColor = "";
+    cashOutBtnEl.style.color = "black";
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = ""; 
     transitionBtnEl.style.backgroundColor = "";
     transitionBtnEl.style.borderColor = "";
+    transitionBtnEl.style.color = "black";
+    payBillBtnEl.style.color = "black";
+    getBonusBtnEl.style.color = "black";
 
 })
 getBonusBtnEl.addEventListener("click", (event) =>{
@@ -103,16 +123,22 @@ getBonusBtnEl.addEventListener("click", (event) =>{
     getBonusParentEl.style.display = "block";
     getBonusBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     getBonusBtnEl.style.borderColor = "#0874F2";
-    addMoneyEl.style.backgroundColor = "";
-    addMoneyEl.style.borderColor = ""; 
+    getBonusBtnEl.style.color = "#0874F2";
+    addMoneyEl.style.backgroundColor = "#ffffff";
+    addMoneyEl.style.borderColor = "#d0d5db";
+    addMoneyEl.style.color = "black"; 
     cashOutBtnEl.style.backgroundColor = "";
     cashOutBtnEl.style.borderColor = "";
+    cashOutBtnEl.style.color = "black";
     userTransferMoneyBtnEl.style.backgroundColor = "";
     userTransferMoneyBtnEl.style.borderColor = "";
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = "";
     transitionBtnEl.style.backgroundColor = "";
     transitionBtnEl.style.borderColor = "";
+    transitionBtnEl.style.color = "black";
+    userTransferMoneyBtnEl.style.color = "black";
+    payBillBtnEl.style.color = "black";
 
 })
 
@@ -126,16 +152,22 @@ payBillBtnEl.addEventListener("click", (event) =>{
     payBillFormEl.style.display = "block";
     payBillBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     payBillBtnEl.style.borderColor = "#0874F2";
-    addMoneyEl.style.backgroundColor = "";
-    addMoneyEl.style.borderColor = ""; 
+    addMoneyEl.style.backgroundColor = "#ffffff";
+    addMoneyEl.style.borderColor = "#d0d5db";
+    addMoneyEl.style.color = "black";
     cashOutBtnEl.style.backgroundColor = "";
     cashOutBtnEl.style.borderColor = "";
+    cashOutBtnEl.style.color = "black";
     userTransferMoneyBtnEl.style.backgroundColor = "";
     userTransferMoneyBtnEl.style.borderColor = "";
     getBonusBtnEl.style.backgroundColor = "";
     getBonusBtnEl.style.borderColor = "";
     transitionBtnEl.style.backgroundColor = "";
     transitionBtnEl.style.borderColor = "";
+    transitionBtnEl.style.color = "black";
+    userTransferMoneyBtnEl.style.color = "black";
+    payBillBtnEl.style.color = "#0874F2";
+    getBonusBtnEl.style.color = "black";
 
 })
 transitionBtnEl.addEventListener("click", (event) =>{
@@ -148,10 +180,12 @@ transitionBtnEl.addEventListener("click", (event) =>{
     transitionListFormEl.style.display = "block";
     transitionBtnEl.style.backgroundColor = "rgba(8,116,242,0.05)";
     transitionBtnEl.style.borderColor = "#0874F2";
-    addMoneyEl.style.backgroundColor = "";
-    addMoneyEl.style.borderColor = ""; 
+    addMoneyEl.style.backgroundColor = "#ffffff";
+    addMoneyEl.style.borderColor = "#d0d5db";
+    addMoneyEl.style.color = "black"; 
     cashOutBtnEl.style.backgroundColor = "";
     cashOutBtnEl.style.borderColor = "";
+    cashOutBtnEl.style.color = "black";
     userTransferMoneyBtnEl.style.backgroundColor = "";
     userTransferMoneyBtnEl.style.borderColor = "";
     getBonusBtnEl.style.backgroundColor = "";
@@ -159,6 +193,10 @@ transitionBtnEl.addEventListener("click", (event) =>{
     payBillBtnEl.style.backgroundColor = "";
     payBillBtnEl.style.borderColor = "";
     transitionListEl.innerText = '';
+    payBillBtnEl.style.color = "black";
+    userTransferMoneyBtnEl.style.color = "black";
+    transitionBtnEl.style.color = "#0874F2";
+    getBonusBtnEl.style.color = "black";
     
 
    for(let element of transactionResult){
@@ -194,8 +232,18 @@ addMoneyBtn.addEventListener("click", (event) =>{
     const addMoneyElValue = parseInt(document.getElementById("addMoney").value);
     const mainBalance = document.getElementById("mainBalance");
     let mainBalanceValue = parseInt(mainBalance.innerText);
+        if(addAcountNumElValue.length > 11){
+        alert("Please Enter Maximum 11 Digit Account number");
+        return;
+    }
+    if(addPinElValue.length > 4){
+        alert("Please Enter Maximum 4 Digit Pin Number");
+        return;
+    }
     
-    if(acountNum === addAcountNumElValue && pinNum === addPinElValue){
+    if(addMoneyElValue > 0){
+
+        if(acountNum === addAcountNumElValue && pinNum === addPinElValue){
         mainBalanceValue = mainBalanceValue + addMoneyElValue;
         mainBalance.innerText = mainBalanceValue;
         addMoneyMsgEl.innerText = "Your money add Successfully";
@@ -220,6 +268,12 @@ document.getElementById("addPin").value = "";
 
     }
 
+    }
+    else{
+        alert("Please Enter Positive Value to add your Balance");
+
+    }
+
    
 })
 
@@ -236,10 +290,20 @@ withdrawMoneyBtn.addEventListener("click", (event) => {
     const mainBalance = document.getElementById("mainBalance");
     let mainBalanceValue = parseInt(mainBalance.innerText);
 
-    if(acountNum === withdrawAcountNumElValue && pinNum === withdrawPinElValue){
+    if(withdrawAcountNumElValue.length > 11){
+        alert("Please Enter Maximum 11 Digit Account number");
+        return;
+    }
+    if(withdrawPinElValue.length > 4){
+        alert("Please Enter Maximum 4 Digit Pin Number");
+        return;
+    }
+
+    if(mainBalanceValue >= withdrawMoneyElValue){
+        if(acountNum === withdrawAcountNumElValue && pinNum === withdrawPinElValue){
         mainBalanceValue = mainBalanceValue - withdrawMoneyElValue;
         mainBalance.innerText = mainBalanceValue;
-        withdrawMoneyMsgEl.innerText = "Your Withdraw money Successfully";
+        withdrawMoneyMsgEl.innerText = "Your Withdraw money Successfully.";
         withdrawMoneyMsgEl.style.color = "green";
 
                const data = {
@@ -256,8 +320,14 @@ document.getElementById("withdrawMoney").value = "";
 
     }
     else{
-        withdrawMoneyMsgEl.innerText = "Please valid account number and pin";
+        withdrawMoneyMsgEl.innerText = "Please valid account number and pin.";
         withdrawMoneyMsgEl.style.color = "red";
+    }
+
+    }
+    else{
+        alert("Your Balance are Low. Please Check your Balance. Then try Cash out.");
+
     }
 });
 
@@ -273,7 +343,16 @@ userSendMoneyBtn.addEventListener("click", (event) => {
     const mainBalance = document.getElementById("mainBalance");
     let mainBalanceValue = parseInt(mainBalance.innerText);
 
-    if(acountNum === userAcountNumElValue && pinNum === userPinElValue){
+    if(userAcountNumElValue.length > 11){
+        alert("Please Enter Maximum 11 Digit Account number");
+        return;
+    }
+    if(userPinElValue.length > 4){
+        alert("Please Enter Maximum 4 Digit Pin Number");
+        return;
+    }
+    if(mainBalanceValue >= transferMoneyElValue){
+        if(acountNum === userAcountNumElValue && pinNum === userPinElValue){
         mainBalanceValue = mainBalanceValue - transferMoneyElValue;
         mainBalance.innerText = mainBalanceValue;
         userMoneyMsgMsgEl.innerText = "Your Transfer money Successfully Send";
@@ -297,6 +376,13 @@ else{
         userMoneyMsgMsgEl.innerText = "Please valid account number and pin";
         userMoneyMsgMsgEl.style.color = "red";
     }
+
+    }
+    else{
+         alert("Your Balance are Low. Please Check your Balance. Then try Transfer Money.");
+
+    }
+    
 });
 
 /*--------------------> Get Bonus functinality start <--------------------*/
@@ -345,7 +431,17 @@ payBillBtn.addEventListener("click", (event) => {
     const mainBalance = document.getElementById("mainBalance");
     let mainBalanceValue = parseInt(mainBalance.innerText);
 
-    if(acountNum === payBillAcountNumElValue && pinNum === payBillPinElValue){
+    if(payBillAcountNumElValue.length > 11){
+        alert("Please Enter Maximum 11 Digit Account number");
+        return;
+    }
+    if(payBillPinElValue.length > 4){
+        alert("Please Enter Maximum 4 Digit Pin Number");
+        return;
+    }
+
+    if(mainBalanceValue >= payBillElValue){
+         if(acountNum === payBillAcountNumElValue && pinNum === payBillPinElValue){
         mainBalanceValue = mainBalanceValue - payBillElValue;
         mainBalance.innerText = mainBalanceValue;
         payBillMsgEl.innerText = "Your Pay Bill Successfully Send";
@@ -366,6 +462,12 @@ document.getElementById("payBill").value ="";
         payBillMsgEl.innerText = "Please valid account number and pin";
         payBillMsgEl.style.color = "red";
     }
+    }
+    else{
+         alert("Your Balance are Low. Please Check your Balance. Then try Pay Bill.");
+    }
+
+   
 });
 
 
